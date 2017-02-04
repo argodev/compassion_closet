@@ -64,6 +64,9 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/scrollreveal/dist/*.js'])
         .pipe(gulp.dest('vendor/scrollreveal'))
 
+    gulp.src(['node_modules/jquery.easing/*.min.js'])
+        .pipe(gulp.dest('vendor/jquery.easing'))
+
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
