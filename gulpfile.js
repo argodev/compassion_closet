@@ -6,6 +6,19 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var concat = require('gulp-concat');  
+var rename = require('gulp-rename');  
+
+
+
+var vendorJsFiles = [
+    'node_modules/jquery/dist/*.min.js',
+    'node_modules/bootstrap/dist/js/*.min.js',
+    'node_modules/magnific-popup/dist/*.min.js',
+    'node_modules/scrollreveal/dist/*.min.js',
+    'node_modules/jquery.easing/*.min.js'
+    ]  
+    jsDest = 'js/';
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -80,6 +93,17 @@ gulp.task('copy', function() {
 
 // Run everything
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+
+
+gulp.task('vendorScripts', function() {  
+    return gulp.src(vendorJsFiles)
+        .pipe(concat('vendor.js'))
+        .pipe(gulp.dest(jsDest));
+});
+gulp.task('rob', []);
+
+
+
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
