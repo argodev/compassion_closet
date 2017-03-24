@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
+ * Start Bootstrap - Compassion Closet v1.0.1 (http://compassioncloset.com)
+ * Copyright 2013-2017 Rob Gillen
  * Licensed under  ()
  */
 html,
@@ -35,14 +35,16 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-a.help {
-  color: #FFFFFF;
+a.white {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: white;
 }
-a.help:focus {
-  color: #ffffff;
+a.white:hover,
+a.white:focus {
+  color: white;
 }
-
-
 h1,
 h2,
 h3,
