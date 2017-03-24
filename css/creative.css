@@ -35,6 +35,14 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
+a.help {
+  color: #FFFFFF;
+}
+a.help:focus {
+  color: #ffffff;
+}
+
+
 h1,
 h2,
 h3,
