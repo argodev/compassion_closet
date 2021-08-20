@@ -1,3 +1,8 @@
 ul {
     list-style: none;
 }
+
+.secondary-header {
+    min-height: 300px;
+    max-height: 300px;
+}
